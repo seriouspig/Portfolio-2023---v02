@@ -8,7 +8,7 @@ import tvStatic1 from "../../../assets/images/tv_static_1.gif";
 import pcScreenSaver2 from "../../../assets/images/windows.gif";
 import macScreenSaver3 from "../../../assets/images/mac.gif";
 import tvGame1 from "../../../assets/images/projects/idefender.gif"
-import macCoding3 from "../../../assets/images/coding.gif";
+import macCoding3 from "../../../assets/images/coding2.gif";
 import pcSketchup2 from "../../../assets/images/sketchup.gif";
 
 
