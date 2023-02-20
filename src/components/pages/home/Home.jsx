@@ -80,7 +80,7 @@ let navigate = useNavigate();
         </article>
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>Hello, I'm Piotr</h1>
+          <h1>Hello, I'm <span className="hero-piotr">Piotr</span></h1>
           <Type />
           <a href="contact.html" className="btn hero-btn">
             contact me

@@ -33,7 +33,7 @@ Projects
 }
 .project {
   position: relative;
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-6);
   border-radius: var(--radius);
   margin-bottom: 2rem;
   box-shadow: var(--light-shadow);
