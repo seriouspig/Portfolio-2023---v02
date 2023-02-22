@@ -10,7 +10,7 @@ import macCoding3 from "../../../assets/images/coding2.gif";
 import pcSketchup2 from "../../../assets/images/sketchup.gif";
 import SocialLinks from "../../links/SocialLinks";
 import { useNavigate } from "react-router-dom";
-import { isMobile } from "react-device-detect";
+import { isIOS, isMobile } from "react-device-detect";
 
 const Home = () => {
   const [isShown, setIsShown] = useState(false);
@@ -21,13 +21,13 @@ const Home = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    if (isMobile) {
-      console.log("this device is mobile")
+    if (isIOS) {
+      console.log("this device is mobile");
       if (isShown) {
-              let path = "/portfolio";
-              isShown && navigate(path);
+        let path = "/portfolio";
+        isShown && navigate(path);
       } else {
-        setIsShown(true)
+        setIsShown(true);
       }
     } else {
       isShown && console.log("The link was clicked.");
@@ -37,13 +37,12 @@ const Home = () => {
   };
 
   const handleMouseEnter = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (!isMobile) {
       console.log("Mouse entered");
-      setIsShown(true)
+      setIsShown(true);
     }
-    
-  }
+  };
 
   return (
     <>
