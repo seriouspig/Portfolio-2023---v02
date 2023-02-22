@@ -100,11 +100,43 @@ const Home = () => {
             Hello, I'm <span className="hero-piotr">Piotr</span>
           </h1>
           <Type />
+          <a className="email" href="mailto: pigryko@yahoo.com">
+            pigryko@yahoo.com
+          </a>
           <a href="contact.html" className="btn hero-btn">
             contact me
           </a>
           <SocialLinks parentClass={"social-icons"} itemClass={"social-icon"} />
         </article>
+        <article class="contact-form">
+          <h3>contact me</h3>
+          <form action="https://formsubmit.co/pigryko@yahoo.com" method="POST" >
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="name"
+                class="form-control"
+                name="firstName"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                name="email"
+              />
+              <textarea
+                name="message"
+                placeholder="message"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn btn">
+              submit here
+            </button>
+          </form>
+        </article>
+
       </div>
     </>
   );
