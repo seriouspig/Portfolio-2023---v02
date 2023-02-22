@@ -31,6 +31,7 @@ const Home = () => {
       }
     } else {
       isShown && console.log("The link was clicked.");
+      setIsShown(true);
       let path = "/portfolio";
       isShown && navigate(path);
     }
