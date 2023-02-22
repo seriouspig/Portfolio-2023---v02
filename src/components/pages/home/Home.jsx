@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home2.css";
 import Type from "./Type";
-import { ReactComponent as PiotrSvg } from "../../../assets/logos/test.svg";
-import { ReactComponent as PiotrSketchSvg } from "../../../assets/logos/sketch.svg";
 import landingImage1 from "../../../assets/images/landing_page_3_final.png";
 import tvStatic1 from "../../../assets/images/tv_static_1.gif";
 import pcScreenSaver2 from "../../../assets/images/windows.gif";
@@ -12,20 +10,40 @@ import macCoding3 from "../../../assets/images/coding2.gif";
 import pcSketchup2 from "../../../assets/images/sketchup.gif";
 import SocialLinks from "../../links/SocialLinks";
 import { useNavigate } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 const Home = () => {
   const [isShown, setIsShown] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
 
-let navigate = useNavigate(); 
+  let navigate = useNavigate();
 
-    const handleClick = (e) => {
-      e.preventDefault();      
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (isMobile) {
+      console.log("this device is mobile")
+      if (isShown) {
+              let path = "/portfolio";
+              isShown && navigate(path);
+      } else {
+        setIsShown(true)
+      }
+    } else {
       isShown && console.log("The link was clicked.");
-          let path = '/portfolio';
+      let path = "/portfolio";
       isShown && navigate(path);
-    };
+    }
+  };
+
+  const handleMouseEnter = (e) => {
+    e.preventDefault()
+    if (!isMobile) {
+      console.log("Mouse entered");
+      setIsShown(true)
+    }
+    
+  }
 
   return (
     <>
@@ -33,12 +51,10 @@ let navigate = useNavigate();
         <article class="hero-img">
           <div
             className="selector-screen-1"
-            onMouseEnter={() => setIsShown(true)}
+            onMouseEnter={handleMouseEnter}
             onMouseLeave={() => setIsShown(false)}
             onClick={handleClick}
-          >
-
-          </div>
+          ></div>
 
           <div className="static-container">
             <img className="static_1" src={tvStatic1} alt="" />
@@ -80,7 +96,9 @@ let navigate = useNavigate();
         </article>
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>Hello, I'm <span className="hero-piotr">Piotr</span></h1>
+          <h1>
+            Hello, I'm <span className="hero-piotr">Piotr</span>
+          </h1>
           <Type />
           <a href="contact.html" className="btn hero-btn">
             contact me
