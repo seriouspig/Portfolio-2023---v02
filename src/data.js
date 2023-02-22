@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaBehance, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 export const pageLinks = [
   {
     id: 1,
@@ -19,29 +19,24 @@ export const pageLinks = [
   {
     id: 4,
     url: "/resume",
-    text: "resume"
-  }
+    text: "resume",
+  },
 ];
 
 export const socialLinks = [
   {
     id: 1,
-    url: "https://www.twitter.com",
+    url: "https://facebook.com/579628308",
     icon: <FaFacebook />,
   },
   {
-    id: 2,
-    url: "https://www.twitter.com",
-    icon: <FaTwitter />,
-  },
-  {
     id: 3,
-    url: "https://www.twitter.com",
+    url: "https://linkedin.com/in/piotr-gryko-85a10077",
     icon: <FaLinkedin />,
   },
   {
     id: 4,
-    url: "https://www.twitter.com",
-    icon: <FaBehance />,
+    url: "https://github.com/seriouspig",
+    icon: <FaGithub />,
   },
 ];
