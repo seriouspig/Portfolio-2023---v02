@@ -103,14 +103,14 @@ const Home = () => {
           <a className="email" href="mailto: pigryko@yahoo.com">
             pigryko@yahoo.com
           </a>
-          <a href="contact.html" className="btn hero-btn">
-            contact me
+          <a href="mailto: pigryko@yahoo.com" className="btn hero-btn">
+            email me
           </a>
           <SocialLinks parentClass={"social-icons"} itemClass={"social-icon"} />
         </article>
-        <article class="contact-form">
+        {/* <article class="contact-form">
           <h3>contact me</h3>
-          <form action="https://formsubmit.co/pigryko@yahoo.com" method="POST" >
+          <form action="https://formsubmit.co/pigryko@yahoo.com" method="POST">
             <div class="form-group">
               <input
                 type="text"
@@ -131,12 +131,17 @@ const Home = () => {
                 rows="5"
               ></textarea>
             </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://localhost:3000/"
+            ></input>
+            <input type="hidden" name="_captcha" value="false"/>
             <button type="submit" class="submit-btn btn">
               submit here
             </button>
           </form>
-        </article>
-
+        </article> */}
       </div>
     </>
   );
