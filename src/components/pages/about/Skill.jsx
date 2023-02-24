@@ -32,9 +32,9 @@ const Skill = (props) => {
           ref={barWidth}
           style={{ width: props.percentage }}
         >
-          <p className="skill-text" style={{ left: props.percentage }}>
+          {/* <p className="skill-text" style={{ left: props.percentage }}>
             {props.percentage}
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
