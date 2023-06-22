@@ -8,11 +8,7 @@ const Skill = (props) => {
 
     const barWidth = useRef();
 
-    useEffect(() => {
-        // const styles = getComputedStyle(barWidth.current);
-        // const styles = barWidth.getBoundingClientRect();
-        console.log(barWidth.current.clientWidth)
-    }, [])
+
 
     // const color = getComputedStyle(document.documentElement).getPropertyValue(
     //   "--logo-color"
@@ -27,15 +23,7 @@ const Skill = (props) => {
           <div className="skill-value value"></div>
         </div>
         {/* <Line percent={50} strokeWidth={4} strokeColor={"#fff"} trailWidth={4}/> */}
-        <div
-          className="skill-text-bar"
-          ref={barWidth}
-          style={{ width: props.percentage }}
-        >
-          {/* <p className="skill-text" style={{ left: props.percentage }}>
-            {props.percentage}
-          </p> */}
-        </div>
+
       </div>
     </div>
   );

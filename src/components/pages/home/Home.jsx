@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Home2.css";
 import Type from "./Type";
-import landingImage1 from "../../../assets/images/landing_page_3_final.png";
+import landingImage1 from "../../../assets/images/landing_page_3_final_2.png";
 import tvStatic1 from "../../../assets/images/tv_static_1.gif";
 import pcScreenSaver2 from "../../../assets/images/windows.gif";
 import macScreenSaver3 from "../../../assets/images/mac.gif";
