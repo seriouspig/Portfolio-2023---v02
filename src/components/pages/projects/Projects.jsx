@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { projects } from "../../../data";
 import Project from "./Project";
 import "./Projects.css";
 
 const Projects = () => {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
   const isTouchDevice = () => {
     return (
@@ -16,13 +16,13 @@ const Projects = () => {
 
   console.log(isTouchDevice());
 
-  const handleClick = (event) => {
-    if (!isActive && isTouchDevice() === true) {
-      event.preventDefault();
-      setIsActive((current) => !current);
-    }
-    console.log("Is active is: " + isActive);
-  };
+  // const handleClick = (event) => {
+  //   if (!isActive && isTouchDevice() === true) {
+  //     event.preventDefault();
+  //     setIsActive((current) => !current);
+  //   }
+  //   console.log("Is active is: " + isActive);
+  // };
 
   return (
     <section className="section projects">
@@ -41,6 +41,7 @@ const Projects = () => {
               image={project.image}
               title={project.title}
               info={project.info}
+              url={project.url}
             />
           );
         })}
