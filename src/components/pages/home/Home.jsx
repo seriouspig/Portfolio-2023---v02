@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <>
       <div className="section-center hero-center">
-        <article class="hero-img">
+        <article className="hero-img">
           <div
             className="selector-screen-1"
             onMouseEnter={handleMouseEnter}
@@ -68,6 +68,7 @@ const Home = () => {
             className="selector-screen-2"
             onMouseEnter={() => setIsShown2(true)}
             onMouseLeave={() => setIsShown2(false)}
+            onClick={handleClick}
           ></div>
           <div className="static-container-2">
             <img className="static_2" src={pcScreenSaver2} alt="" />
@@ -81,6 +82,7 @@ const Home = () => {
             className="selector-screen-3"
             onMouseEnter={() => setIsShown3(true)}
             onMouseLeave={() => setIsShown3(false)}
+            onClick={handleClick}
           ></div>
 
           <div className="static-container-3">
@@ -92,7 +94,7 @@ const Home = () => {
               <img className="static_3 coding_3" src={macCoding3} alt="" />
             </div>
           )}
-          <img src={landingImage1} class="hero-photo" alt="john doe" />
+          <img src={landingImage1} className="hero-photo" alt="john doe" />
         </article>
         <article className="hero-info">
           <div className="underline"></div>
