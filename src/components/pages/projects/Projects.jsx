@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "../../../data";
 import Project from "./Project";
 import "./Projects.css";
 
 const Projects = () => {
   // const [isActive, setIsActive] = useState(false);
+  const [category, setCategory] = useState("All")
 
   const isTouchDevice = () => {
     return (
@@ -33,7 +34,26 @@ const Projects = () => {
         </h2>
         <div className="underline"></div>
         <p className="projects-text"></p>
+        <div className="categories section-center">
+          <div onClick={() => setCategory("All")}>
+            <h2>All</h2>
+            {category === "All" && <div className="underline-2"></div>}
+          </div>
+          <div onClick={() => setCategory("Games")}>
+            <h2>Games</h2>
+            {category === "Games" && <div className="underline-2"></div>}
+          </div>
+          <div onClick={() => setCategory("Software")}>
+            <h2>Software</h2>
+            {category === "Software" && <div className="underline-2"></div>}
+          </div>
+          <div onClick={() => setCategory("Arch")}>
+            <h2>Arch</h2>
+            {category === "Arch" && <div className="underline-2"></div>}
+          </div>
+        </div>
       </div>
+
       <div className="projects-center section-center">
         {projects.map((project) => {
           return (
