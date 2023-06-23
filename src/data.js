@@ -52,6 +52,7 @@ export const projects = [
     image: idefender_img,
     title: "Id-efender",
     info: "A solo project developed as part of my Game Development Course at Edinburgh College. A spin on the 1981 Atari’s classic “Defender”.",
+    category: "Games",
   },
   {
     id: 2,
@@ -59,6 +60,7 @@ export const projects = [
     image: millionaires_img,
     title: "Millionaires",
     info: "Group project developed during the CodeClan boot camp course. Based on the TV show – 'Who wants to be a millionaire'.",
+    category: "Software",
   },
   {
     id: 3,
@@ -66,6 +68,7 @@ export const projects = [
     image: ward_img,
     title: "The Ward",
     info: "Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works",
+    category: "Arch",
   },
   {
     id: 4,
@@ -73,6 +76,7 @@ export const projects = [
     image: grooooaar_img,
     title: "GROOOOARR",
     info: "Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works",
+    category: "Games",
   },
   {
     id: 5,
@@ -80,6 +84,7 @@ export const projects = [
     image: idefender_img,
     title: "Id-efender",
     info: "A solo project developed as part of my Game Development Course at Edinburgh College. A spin on the 1981 Atari’s classic “Defender”.",
+    category: "Games",
   },
   {
     id: 6,
@@ -87,6 +92,7 @@ export const projects = [
     image: millionaires_img,
     title: "Millionaires",
     info: "Group project developed during the CodeClan boot camp course. Based on the TV show – 'Who wants to be a millionaire'.",
+    category: "Software",
   },
   {
     id: 7,
@@ -94,6 +100,7 @@ export const projects = [
     image: ward_img,
     title: "The Ward",
     info: "Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works",
+    category: "Arch",
   },
   {
     id: 8,
@@ -101,5 +108,6 @@ export const projects = [
     image: grooooaar_img,
     title: "GROOOOARR",
     info: "Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works",
+    category: "Games",
   },
 ];

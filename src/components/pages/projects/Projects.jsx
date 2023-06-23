@@ -55,16 +55,26 @@ const Projects = () => {
       </div>
 
       <div className="projects-center section-center">
-        {projects.map((project) => {
-          return (
-            <Project
-              image={project.image}
-              title={project.title}
-              info={project.info}
-              url={project.url}
-            />
-          );
-        })}
+        {projects
+          .filter((project) => {
+            if (category === "All") {
+              return true; 
+            } else {
+              return project.category === category; 
+            }
+          })
+          .map((project) => {
+            return (
+              <Project
+                key={project.id}
+                image={project.image}
+                title={project.title}
+                info={project.info}
+                url={project.url}
+                category={project.category}
+              />
+            );
+          })}
       </div>
     </section>
   );
