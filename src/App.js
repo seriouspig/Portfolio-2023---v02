@@ -6,15 +6,31 @@ import Home from "./components/pages/home/Home";
 import About from "./components/pages/about/About";
 import Projects from "./components/pages/projects/Projects";
 import Resume from "./components/pages/resume/Resume";
+import { useState } from "react";
 
 function App() {
+    const [category, setCategory] = useState("All");
+
+    const changeCategory = (category) => {
+      console.log("Category changed to " + category)
+      setCategory(category)
+    }
+    
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route
+          exact
+          path="/"
+          element={<Home changeCategory={changeCategory} />}
+        />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/portfolio" element={<Projects />} />
+        <Route
+          exact
+          path="/portfolio"
+          element={<Projects category={category} />}
+        />
         <Route exact path="/resume" element={<Resume />} />
       </Routes>
       <Footer />

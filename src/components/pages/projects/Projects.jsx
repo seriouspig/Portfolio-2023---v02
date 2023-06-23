@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { projects } from "../../../data";
 import Project from "./Project";
 import "./Projects.css";
 
-const Projects = () => {
-  // const [isActive, setIsActive] = useState(false);
-  const [category, setCategory] = useState("All")
+const Projects = (props) => {
+  const [category, setCategory] = useState("All");
+
+  useEffect(() => {
+    setCategory(props.category);
+  }, [props.category]);
 
   const isTouchDevice = () => {
     return (
@@ -16,14 +19,6 @@ const Projects = () => {
   };
 
   console.log(isTouchDevice());
-
-  // const handleClick = (event) => {
-  //   if (!isActive && isTouchDevice() === true) {
-  //     event.preventDefault();
-  //     setIsActive((current) => !current);
-  //   }
-  //   console.log("Is active is: " + isActive);
-  // };
 
   return (
     <section className="section projects">
@@ -58,9 +53,9 @@ const Projects = () => {
         {projects
           .filter((project) => {
             if (category === "All") {
-              return true; 
+              return true;
             } else {
-              return project.category === category; 
+              return project.category === category;
             }
           })
           .map((project) => {

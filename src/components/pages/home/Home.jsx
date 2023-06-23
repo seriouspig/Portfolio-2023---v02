@@ -12,28 +12,69 @@ import SocialLinks from "../../links/SocialLinks";
 import { useNavigate } from "react-router-dom";
 import { isIOS, isMobile } from "react-device-detect";
 
-const Home = () => {
+const Home = (props) => {
   const [isShown, setIsShown] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
 
   let navigate = useNavigate();
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = (screen) => {
+    // e.preventDefault();
     if (isIOS) {
       console.log("this device is mobile");
-      if (isShown) {
-        let path = "/portfolio";
-        isShown && navigate(path);
-      } else {
-        setIsShown(true);
+      if (screen === "screen-1") {
+        if (isShown) {
+          let path = "/portfolio";
+          isShown && navigate(path);
+
+          props.changeCategory("Games");
+        } else {
+          setIsShown(true);
+        }
+      } else if (screen === "screen-2") {
+        if (isShown2) {
+          let path = "/portfolio";
+          isShown2 && navigate(path);
+          props.changeCategory("Arch");
+        } else {
+          setIsShown2(true);
+        }
+      } else if (screen === "screen-3") {
+        if (isShown3) {
+          let path = "/portfolio";
+          isShown3 && navigate(path);
+          props.changeCategory("Software");
+        } else {
+          setIsShown3(true);
+        }
       }
     } else {
-      isShown && console.log("The link was clicked.");
-      setIsShown(true);
-      let path = "/portfolio";
-      isShown && navigate(path);
+      if (screen === "screen-1") {
+        isShown && console.log("The link was clicked.");
+        setIsShown(true);
+
+        props.changeCategory("Games");
+
+        let path = "/portfolio";
+        isShown && navigate(path);
+      } else if (screen === "screen-2") {
+        isShown2 && console.log("The link was clicked.");
+        setIsShown2(true);
+
+        props.changeCategory("Arch");
+
+        let path = "/portfolio";
+        isShown2 && navigate(path);
+      } else if (screen === "screen-3") {
+        isShown3 && console.log("The link was clicked.");
+        setIsShown3(true);
+
+        props.changeCategory("Software");
+
+        let path = "/portfolio";
+        isShown3 && navigate(path);
+      }
     }
   };
 
@@ -53,7 +94,7 @@ const Home = () => {
             className="selector-screen-1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={() => setIsShown(false)}
-            onClick={handleClick}
+            onClick={() => handleClick("screen-1")}
           ></div>
 
           <div className="static-container">
@@ -68,7 +109,7 @@ const Home = () => {
             className="selector-screen-2"
             onMouseEnter={() => setIsShown2(true)}
             onMouseLeave={() => setIsShown2(false)}
-            onClick={handleClick}
+            onClick={() => handleClick("screen-2")}
           ></div>
           <div className="static-container-2">
             <img className="static_2" src={pcScreenSaver2} alt="" />
@@ -82,7 +123,7 @@ const Home = () => {
             className="selector-screen-3"
             onMouseEnter={() => setIsShown3(true)}
             onMouseLeave={() => setIsShown3(false)}
-            onClick={handleClick}
+            onClick={() => handleClick("screen-3")}
           ></div>
 
           <div className="static-container-3">
