@@ -12,36 +12,41 @@ const resumeLink =
 const Resume = () => {
   const [size, setSize] = useState(0);
   const [width, setWidth] = useState(0);
+  const [rightOffset, setRightOffset] = useState(0);
   const resumeContainerRef = useRef(null);
   const pageRef = useRef(null);
-    useLayoutEffect(() => {
-      function updateWidth() {
-        setWidth(window.innerWidth);
-      }
-      window.addEventListener("resize", updateWidth);
-      updateWidth();
-      return () => window.removeEventListener("resize", updateWidth);
-    }, []);
 
-    let rightOffset = (width - size)/2
+  console.log(width);
 
-  useEffect(() => {
-    const resumeWidth =
-      resumeContainerRef.current.getBoundingClientRect().width;
-    console.log(resumeWidth);
-    setSize(resumeWidth);
+  useLayoutEffect(() => {
+    function updateWidth() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", updateWidth);
+    updateWidth();
+    return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
-      window.onorientationchange = function () {
-        var orientation = window.orientation;
-        switch (orientation) {
-          case 0:
-          case 90:
-          case -90:
-            window.location.reload();
-            break;
-        }
-      };
+  useEffect(() => {
+    
+    const resumeWidth =
+      resumeContainerRef.current.getBoundingClientRect().width;
+    setSize(resumeWidth);
+    setRightOffset((window.innerWidth - resumeWidth) / 2);
+  }, []);
+
+  window.onorientationchange = function () {
+    var orientation = window.orientation;
+    switch (orientation) {
+      case 0:
+      case 90:
+      case -90:
+        window.location.reload();
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <>
@@ -49,8 +54,9 @@ const Resume = () => {
         <a
           href={pdf}
           target="_blank"
+          rel="noreferrer"
           className={classes.btn}
-          style={{ right: `${rightOffset}2px` }}
+          style={{ right: `${rightOffset}px` }}
         >
           <FaDownload />
         </a>

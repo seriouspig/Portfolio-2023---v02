@@ -4,6 +4,7 @@ import millionaires_img from "./assets/images/projects/wwtbam.png";
 import grooooaar_img from "./assets/images/projects/grooooaar.gif";
 import they_keep_coming_img from "./assets/images/projects/theykeepcoming.gif";
 import idefender_img from "./assets/images/projects/idefender.gif";
+import threejs from "./assets/images/projects/threejs.gif";
 import ward_img from "./assets/images/projects/theward.png";
 import dungeon_master from "./assets/images/projects/dungeonmaster.png";
 export const pageLinks = [
@@ -65,14 +66,6 @@ export const projects = [
     category: "Software",
   },
   {
-    id: 3,
-    url: "https://the-ward-c50f7.web.app/",
-    image: ward_img,
-    title: "The Ward",
-    info: "Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works",
-    category: "Arch",
-  },
-  {
     id: 4,
     url: "https://madbatgames.itch.io/grooooarr",
     image: grooooaar_img,
@@ -97,19 +90,19 @@ export const projects = [
     category: "Games",
   },
   {
-    id: 7,
-    url: "https://www.onet.pl",
+    id: 3,
+    url: "https://the-ward-c50f7.web.app/",
     image: ward_img,
-    title: "DUNGEON MASTER 3D",
-    info: "A horror spin on the dungeon crawler genre. Full 3D using Three.js framework",
+    title: "THE WARD",
+    info: "Final group project at CodeClan, developed using React.js and Java SpringBoot. Inspired by Bullfrog’s 1997 hit Theme Hospital",
     category: "Games",
   },
   {
-    id: 8,
-    url: "https://www.onet.pl",
-    image: grooooaar_img,
-    title: "GROOOOARR",
-    info: "Another entry for the itch.io Nokia 3310 game jam. Interesting enemy AI. A full-res version for mobile devces is in the works",
+    id: 7,
+    url: "https://dungeon-crawler-piotr.netlify.app",
+    image: threejs,
+    title: "DUNGEON MASTER 3D",
+    info: "A horror spin on the dungeon crawler genre. Full 3D using Three.js framework",
     category: "Games",
   },
 ];
