@@ -4,8 +4,10 @@ Footer
 ===============
 */
 .footer-container {
-    width: 100vw;
-    background: var(--clr-grey-1);
+  /* position: absolute;
+  bottom: 0px; */
+  width: 100vw;
+  background: var(--clr-grey-1);
 }
 .footer {
   text-align: center;
@@ -25,7 +27,7 @@ Footer
   font-size: 0.875rem;
 }
 .footer-links {
-    margin-bottom: 0.875rem;
+  margin-bottom: 0.875rem;
 }
 .footer-link {
   color: var(--clr-white);
@@ -70,17 +72,19 @@ Footer
     flex-direction: row;
     align-items: center;
   }
-  .footer-links, .copyright, .footer-icons {
-      margin-bottom: 0;
-      padding-bottom: 0;
+  .footer-links,
+  .copyright,
+  .footer-icons {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .copyright {
-      order: 1;
+    order: 1;
   }
   .footer-links {
-      order: 2;
+    order: 2;
   }
   .footer-icons {
-      order: 3;
+    order: 3;
   }
 }

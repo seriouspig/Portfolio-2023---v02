@@ -1,7 +1,6 @@
 import React from "react";
 import PageLinks from "../links/PageLinks";
 import SocialLinks from "../links/SocialLinks";
-import { socialLinks } from "../../data";
 import classes from "./Footer.module.css";
 
 const Footer = () => {

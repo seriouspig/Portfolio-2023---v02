@@ -9,13 +9,13 @@ import Resume from "./components/pages/resume/Resume";
 import { useState } from "react";
 
 function App() {
-    const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("All");
 
-    const changeCategory = (category) => {
-      console.log("Category changed to " + category)
-      setCategory(category)
-    }
-    
+  const changeCategory = (category) => {
+    console.log("Category changed to " + category);
+    setCategory(category);
+  };
+
   return (
     <Router>
       <Navbar />

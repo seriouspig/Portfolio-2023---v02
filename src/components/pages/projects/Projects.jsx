@@ -6,6 +6,7 @@ import "./Projects.css";
 const Projects = (props) => {
   const [category, setCategory] = useState("All");
 
+
   useEffect(() => {
     setCategory(props.category);
   }, [props.category]);
@@ -23,7 +24,7 @@ const Projects = (props) => {
   return (
     <section className="section projects">
       {/* <!-- section title --> */}
-      <div className="section-title">
+      <div className="section-title" >
         <h2>
           My <span className="hero-piotr">work</span>
         </h2>

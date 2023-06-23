@@ -88,6 +88,10 @@ Projects
   transform: scale(0.85);
 }
 
+.projects-center {
+  min-height: 70vh;
+}
+
 @media screen and (min-width: 676px) {
   .projects-center {
     display: grid;
