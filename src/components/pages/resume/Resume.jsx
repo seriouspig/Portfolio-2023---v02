@@ -7,7 +7,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/seriouspig/Piotr-Gryko-CV/main/Piotr Gryko_CV.pdf";
+  "https://raw.githubusercontent.com/seriouspig/Piotr-Gryko-CV/main/Piotr_Gryko_CV.pdf";
 
 const Resume = () => {
   const [size, setSize] = useState(0);
