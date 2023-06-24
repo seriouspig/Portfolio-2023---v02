@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     id: 3,
-    url: "https://the-ward-c50f7.web.app/",
+    url: "https://the-ward-js.netlify.app/",
     image: ward_img,
     title: "THE WARD",
     info: "Final group project at CodeClan, developed using React.js and Java SpringBoot. Inspired by Bullfrog’s 1997 hit Theme Hospital",
