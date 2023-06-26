@@ -7,6 +7,7 @@ import idefender_img from "./assets/images/projects/idefender.gif";
 import threejs from "./assets/images/projects/threejs.gif";
 import ward_img from "./assets/images/projects/theward.png";
 import dungeon_master from "./assets/images/projects/dungeonmaster.png";
+import arch_portfolio from "./assets/images/projects/arch_portfolio.jpg"
 export const pageLinks = [
   {
     id: 1,
@@ -95,7 +96,7 @@ export const projects = [
     image: ward_img,
     title: "THE WARD",
     info: "Final group project at CodeClan, developed using React.js and Java SpringBoot. Inspired by Bullfrog’s 1997 hit Theme Hospital",
-    category: "Games",
+    category: "Software",
   },
   {
     id: 7,
@@ -104,5 +105,13 @@ export const projects = [
     title: "DUNGEON MASTER 3D",
     info: "A horror spin on the dungeon crawler genre. Full 3D using Three.js framework",
     category: "Games",
+  },
+  {
+    id: 8,
+    url: "https://piotr-gryko-design.netlify.app",
+    image: arch_portfolio,
+    title: "ACHITECTURAL PORTFOLIO",
+    info: "A website showcasing some of my architectural work done over the last 20 years.",
+    category: "Arch",
   },
 ];
