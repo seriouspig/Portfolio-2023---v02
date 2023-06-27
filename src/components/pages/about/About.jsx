@@ -36,7 +36,7 @@ const About = () => {
             Bluebox Aviation, Dunfermline
           </h4>
           <p>
-            Assisting in developmentof cutting-edge inflight enterntainemnt
+            Assisting in developmentof cutting-edge inflight entertainment
             systems for airlines across the globe. Expanding my knowledge of
             backend development using Bash, PHP and Node.js
           </p>
