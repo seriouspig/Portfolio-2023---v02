@@ -114,4 +114,12 @@ export const projects = [
     info: "A website showcasing some of my architectural work done over the last 20 years.",
     category: "Arch",
   },
+  {
+    id: 9,
+    url: "https://piotr-snake.netlify.app",
+    image: threejs,
+    title: "REACT SNAKE",
+    info: "A snake game with 10 levels, done completely in React JS, as part of a weekend challenge.",
+    category: "Games",
+  },
 ];
