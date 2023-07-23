@@ -8,6 +8,7 @@ import threejs from "./assets/images/projects/threejs.gif";
 import ward_img from "./assets/images/projects/theward.png";
 import dungeon_master from "./assets/images/projects/dungeonmaster.png";
 import arch_portfolio from "./assets/images/projects/arch_portfolio.jpg"
+import react_snake from "./assets/images/projects/react-snake.gif"
 export const pageLinks = [
   {
     id: 1,
@@ -117,7 +118,7 @@ export const projects = [
   {
     id: 9,
     url: "https://piotr-snake.netlify.app",
-    image: threejs,
+    image: react_snake,
     title: "REACT SNAKE",
     info: "A snake game with 10 levels, done completely in React JS, as part of a weekend challenge.",
     category: "Games",
