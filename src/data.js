@@ -10,6 +10,7 @@ import dungeon_master from "./assets/images/projects/dungeonmaster.png";
 import arch_portfolio from "./assets/images/projects/arch_portfolio.jpg"
 import react_snake from "./assets/images/projects/react-snake.gif"
 import dakota_express from "./assets/images/projects/dakota_express.gif";
+import memeory from "./assets/images/projects/memeory.png";
 export const pageLinks = [
   {
     id: 1,
@@ -134,10 +135,10 @@ export const projects = [
   },
   {
     id: 11,
-    url: "https://piotr-snake.netlify.app",
-    image: react_snake,
-    title: "REACT SNAKE",
-    info: "A snake game with 10 levels, done completely in React JS, as part of a weekend challenge.",
+    url: "https://piotr-memeory.netlify.app/",
+    image: memeory,
+    title: "MEMEORY",
+    info: "A quick memory game clone done in Vanilla JS over",
     category: "Games",
   },
 ];
