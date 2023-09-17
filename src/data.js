@@ -9,6 +9,7 @@ import ward_img from "./assets/images/projects/theward.png";
 import dungeon_master from "./assets/images/projects/dungeonmaster.png";
 import arch_portfolio from "./assets/images/projects/arch_portfolio.jpg"
 import react_snake from "./assets/images/projects/react-snake.gif"
+import dakota_express from "./assets/images/projects/dakota_express.gif";
 export const pageLinks = [
   {
     id: 1,
@@ -117,6 +118,22 @@ export const projects = [
   },
   {
     id: 9,
+    url: "https://piotr-snake.netlify.app",
+    image: react_snake,
+    title: "REACT SNAKE",
+    info: "A snake game with 10 levels, done completely in React JS, as part of a weekend challenge.",
+    category: "Games",
+  },
+  {
+    id: 10,
+    url: "https://madbatgames.itch.io/dakota",
+    image: dakota_express,
+    title: "DAKOTA EXPRESS",
+    info: "A run&gun game developed for the 2023 LowRez game jam. Developed in Construct 3. ",
+    category: "Games",
+  },
+  {
+    id: 11,
     url: "https://piotr-snake.netlify.app",
     image: react_snake,
     title: "REACT SNAKE",
